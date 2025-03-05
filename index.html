@@ -5,9 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tic Tac Toe</title>
   <link rel="stylesheet" href="style.css">
+  <link rel = "stylesheet" href = "main-menu.css">
 </head>
 <body>
-  <div class="game-container">
+  <div class="start-container">
+    <h1>Welcome to Tic Tac Toe</h1>
+    
+    <label for="player-name">Enter your name:</label>
+    <input type="text" id="player-name" placeholder="Your Name">
+    
+    <h2>Choose Your Mode</h2>
+    
+    <div class="button-group">
+      <button class="mode-button">Play Against Computer</button>
+      <button class="mode-button">Play Against Player</button>
+    </div>
+    
+    <button class="start-button">Start Game</button>
+  </div>
+
+  <div style = "display:none" class="game-container">
     <h1>Tic Tac Toe</h1>
     <div id="game-board">
       <div class="cell" data-index="0"></div>
@@ -22,6 +39,7 @@
     </div>
     <div id="message"></div>
     <button id="restart">Restart Game</button>
+    <button id="main-menu">Main Menu</button>
   </div>
   <script src="script.js"></script>
 </body>
